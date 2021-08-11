@@ -1,0 +1,27 @@
+ul.social-network {
+  list-style: none;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  padding: 4px;
+}
+
+.fa {
+  font-size: 32px;
+  color: white;
+  padding: 8px;
+}
+
+.fa-linkedin-square:hover {
+  color: #0e76a8;
+}
+
+.fa-github-square:hover {
+  color: #171515;
+}
+
+.bg-laranjaescuro {
+  background-color: #F0B708;
+}
