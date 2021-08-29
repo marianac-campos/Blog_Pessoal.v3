@@ -3,6 +3,7 @@ import { UserLogin } from '../model/UserLogin';
 import { AuthService } from '../service/auth.service';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { AlertsService } from '../service/alerts.service';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private auth: AuthService,
-    private router: Router
+    private router: Router,
+    private alerts: AlertsService,
   ) { }
 
   ngOnInit() {
@@ -34,10 +36,13 @@ export class LoginComponent implements OnInit {
       environment.tipo = this.userLogin.tipo
 
       this.router.navigate(['/home'])
+
     }, erro => {
       if (erro.status == 401) {
-        alert("Usuário ou senha estão incorretos!")
+        this.alerts.showAlertDanger("Usuário não encontrado!")
       }
     })
+
   }
+
 }

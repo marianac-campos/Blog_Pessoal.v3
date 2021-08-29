@@ -18,17 +18,18 @@ export class ThemeComponent implements OnInit {
   constructor(
     private router: Router,
     private themeService: ThemeService,
-    private alerts: AlertsService,
+    private alert: AlertsService,
   ) { }
 
   ngOnInit() {
     if (environment.token == '') {
-      alert("Sua sessão expirou, faça o login novamente")
+      this.alert.showAlertInfo('Sua sessão expirou, faça login novamente')
       this.router.navigate(['/login'])
     }
 
     if (environment.tipo != 'adm') {
-      this.alerts.showAlertInfo("Você não possue permissão para cadastrar um novo tema!")
+      this.alert.showAlertDanger("Você não possue permissão para cadastrar um novo tema!")
+      this.router.navigate(['/home'])
     }
 
     this.findAllThemes()
@@ -43,7 +44,7 @@ export class ThemeComponent implements OnInit {
   cadastrar() {
     this.themeService.postTheme(this.tema).subscribe((resp: Theme) => {
       this.tema = resp
-      alert("Tema cadastrado com sucesso!")
+      this.alert.showAlertSuccess("Tema cadastrado com sucesso!")
       this.findAllThemes()
       this.tema = new Theme()
     })

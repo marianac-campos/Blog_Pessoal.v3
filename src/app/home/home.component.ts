@@ -82,7 +82,7 @@ export class HomeComponent implements OnInit {
 
   findByTheme() {
     if (this.tituloTema == '') {
-      this.getAllThemes()
+      this.getAllThemes();
     } else {
       this.themeService.getByTheme(this.tituloTema).subscribe((resp: Theme[]) => {
         this.listarTemas = resp

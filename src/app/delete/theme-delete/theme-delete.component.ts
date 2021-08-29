@@ -2,6 +2,7 @@ import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Theme } from 'src/app/model/Theme';
+import { AlertsService } from 'src/app/service/alerts.service';
 import { ThemeService } from 'src/app/service/theme.service';
 import { environment } from 'src/environments/environment.prod';
 
@@ -19,11 +20,12 @@ export class ThemeDeleteComponent implements OnInit {
     private themeService: ThemeService,
     private router: Router,
     private route: ActivatedRoute,
+    private alert: AlertsService,
   ) { }
 
   ngOnInit() {
     if (environment.token == '') {
-      alert("Sua sessão expirou, faça o login novamente")
+      this.alert.showAlertInfo('Sua sessão expirou, faça login novamente')
       this.router.navigate(['/login'])
     }
 
@@ -39,7 +41,7 @@ export class ThemeDeleteComponent implements OnInit {
 
   apagar() {
     this.themeService.deleteTheme(this.idTema).subscribe(() => {
-      alert("Tema apagado com sucesso!")
+      this.alert.showAlertSuccess("Tema apagado com sucesso!")
       this.router.navigate(['/theme'])
     })
   }

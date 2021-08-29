@@ -1,20 +1,22 @@
 <div class="container-fluid">
   <div class="row d-flex align-items-center">
+
     <div class="col-md-6">
       <div class="row d-flex justify-content-center">
         <div class="col-md-6">
+
           <h1 class="text-center mb-3">Entrar</h1>
 
           <div class="form-group">
-            <label for="usuario">Usuário</label>
+            <label for="usuario">Email</label>
             <input [(ngModel)]='userLogin.login' class="form-control" type="text" name="usario" id="usuario"
-              placeholder="Digite seu usuário">
+              placeholder="Email">
           </div>
 
           <div class="form-group">
             <label for="senha">Senha</label>
             <input [(ngModel)]='userLogin.senha' class="form-control" type="password" name="senha" id="senha"
-              placeholder="Digite sua senha">
+              placeholder="Senha">
           </div>
 
           <div class="d-flex justify-content-center">
@@ -23,10 +25,13 @@
 
           <hr class="mt-5 mb-5">
 
-          <p class="text-center">Não tem uma conta?<a routerLink='/register'> Cadastre-se</a> !</p>
+          <p class="text-center">Não tem uma conta? <a routerLink='/register'>Cadastre-se</a> agora!</p>
+
         </div>
       </div>
     </div>
+
     <div class="col-md-6" id="img-bg"></div>
+
   </div>
 </div>
