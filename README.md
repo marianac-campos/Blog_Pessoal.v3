@@ -2,7 +2,7 @@
 
 <h2 align="center">Repositório do Frontend do Blog Pessoal</h2>
 
-<h4 align="center"> ✅ Frontend - Blog Pessoal 📝 Concluído ✅ </h4>
+<h4 align="center"> ✅ Blog Pessoal - Concluído ✅ </h4>
 <h4 align="center"> Tudo em ordem! Mas pode ser que futuramente eu faça mais modificações.</h4>
 
 ----
