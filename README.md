@@ -1,27 +1,30 @@
-# BlogPessoal
+![banner blog](https://i.imgur.com/N69z6KK.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+<h2 align="center">Repositório do Frontend do Blog Pessoal</h2>
 
-## Development server
+<h4 align="center"> ✅ Frontend - Blog Pessoal 📝 Concluído ✅ </h4>
+<h4 align="center"> Tudo em ordem! Mas pode ser que futuramente eu faça mais modificações.</h4>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+----
 
-## Code scaffolding
+## Demonstração 🎬 
+### Para acessar o site [clique aqui](blog-cplus.netlify.app/#/login).
+> ⚠ Quando for fazer o cadastro ou logar é bem provavél que **demore para carregar**, pois o Heroku sempre aproveita pra tirar um cochilo após 15 minutos!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Tecnologias Utilizadas 💻
+- HTML5
+- CSS3
+- TypeScript
+- Angular
+- Java
+- Spring Boot
+- PostgreSQL
+- Deploy: Heroku e Netlify
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<div align="center">
+<h2>Autora 👩🏻‍💻</h2>
+<p>Feito com ❤️ por Mariana Campos 👋🏽 Entre em contato!</p>
+<a href="https://www.linkedin.com/in/mariana-campos-br/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-4FBDC8?style=flat&logo=LinkedIn&logoColor=white&link=https://www.linkedin.com/in/mariana-campos-br/"></a> <a href="mailto:marianacristinadecampos@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-E346B9?style=flat&logo=Gmail&logoColor=white&link=mailto:marianacristinadecampos@gmail.com"></a>
+</div>
