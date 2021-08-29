@@ -1,6 +1,6 @@
 ![banner blog](https://i.imgur.com/N69z6KK.png)
 
-<h2 align="center">Repositório do Frontend do Blog Pessoal</h2>
+<h2 align="center">Repositório Projeto Final do Blog Pessoal</h2>
 
 <h4 align="center"> ✅ Blog Pessoal - Concluído ✅ </h4>
 <h4 align="center"> Tudo em ordem! Mas pode ser que futuramente eu faça mais modificações.</h4>
@@ -10,6 +10,8 @@
 ## Demonstração 🎬 
 ### Para acessar o site [clique aqui](blog-cplus.netlify.app/#/login).
 > ⚠ Quando for fazer o cadastro ou logar é bem provavél que **demore para carregar**, pois o Heroku sempre aproveita pra tirar um cochilo após 15 minutos!
+
+[Demonstração mais detalhada em breve! 👀]
 
 ---
 
