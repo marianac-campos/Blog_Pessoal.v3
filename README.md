@@ -11,8 +11,6 @@
 ### Para acessar o site [clique aqui](blog-cplus.netlify.app/#/login).
 ### ⚠ Quando for fazer o cadastro ou logar é bem provavél que **demore para carregar**, pois o Heroku sempre aproveita pra tirar um cochilo após 15 minutos!
 
-> Demonstração mais detalhada em breve! 👀
-
 ---
 
 ## Tecnologias Utilizadas 💻
